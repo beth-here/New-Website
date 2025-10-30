@@ -1,3 +1,17 @@
+Instructions
+You will conceptualize, plan, and launch a five-page (minimum) piece of Net Art with reciprocal links between the five+ pages. 
+Your project must employ both HTML and CSS of your own design, and at least one image and one video. 
+You will include your name in a comment at the top of each of your HTML pages. 
+Your piece should be conceptually based, meaning that the idea helps drive the decisions you make as you execute the piece. 
+Since this project is to be native to the Web, consider what that means to make work on the Internet and for display on the Internet in the twenty-first century.
+
+Your piece could be a text-based narrative, a multi-page game, a formalist exercise in Post-Internet chaos, a frustration and complication of website expectations and design, an autobiographical videolog, a navigable treatise in the form of YouTube tutorials, or many other options. 
+It should be more than just a “gallery,” but something that leverages interaction, navigation, and the possibilities of code and website structures.
+
+
+
+Resources
+<!-- Textbox -->
 <!-- https://codepen.io/ryanjgill/pen/VwYBPJ -->
 <div>
   <h3>Multiline placeholder text</h3>

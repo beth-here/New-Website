@@ -1,4 +1,6 @@
-#This will be the home page of this website.
+<!-- This will be the home page of this website. -->
+<!-- #https://www.w3schools.com -->  
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +57,154 @@
     background-repeat: no-repeat;
   }
 
-#changing cursor
   .grid-unit:hover {
     cursor: url('https://art240.christopher-lynn.org/tutorials/i/circle-pointer.png'), auto;
   }
+
+/* This caption format is for a semi-transparent white background located at the bottom of the image. If you would rather see the other option, then delete this one, and uncommment the other. */
+
+  .caption {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: .5rem .5rem 1rem .5rem;
+    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: .85rem;
+    color: #000;
+    text-align: right;
+    background: rgba(255,255,255,0.8);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+/* This caption is for a semi-transparent red background coving the full image, with the caption located in the center of the box. If you want this option, then delete the previous, and uncomment this section.
+
+  .caption {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .5rem .5rem 1rem .5rem;
+    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    line-height: 30vh;
+    text-align: center;
+    color: #fff;
+    background: rgba(255,0,0,0.8);
+    transition: opacity 0.5s ease-in-out;
+  }
+
+*/
+
+  .grid-unit:hover .caption {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Responsive layout - makes a one column-layout instead of multi-columns */
+  @media screen and (max-width: 782px) {
+    .col2 .grid-unit,
+    .col3 .grid-unit,
+    .col4 .grid-unit {
+      width: 96%;
+      float: none;
+      height: 30vh;
+      margin: 3vh 2%;
+    }
+  }
+  </style>
+</head>
+
+
+<!-- ========================= BODY ========================= -->
+<body>
+
+<header>
+  <h1>Image Grid</h1>
+  <p>Images float left in rows. Images are in the background of the divs, which allows all the images to appear with the same dimensions, but they  get automatically cropped.</p>
+</header>
+
+<div class="col4">
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1-Hydnangiaceae.jpg');">
+    <p class="caption"><em>Hydnangiaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1a-Hydnangiaceae.jpg');">
+    <p class="caption"><em>Hydnangiaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1b-Hydnangiaceae.jpg');">
+    <p class="caption"><em>Hydnangiaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/2-Mycenceae.jpg');">
+    <p class="caption"><em>Mycenceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/3.-trichaptum.jpg');">
+    <p class="caption"><em>Trichaptum</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/4-icmadophilaceae.jpg');">
+    <p class="caption"><em>Icmadophilaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/5-Russulaceae.jpg');">
+    <p class="caption"><em>Russulaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/6-Hypocreaceae.jpg');">
+    <p class="caption"><em>Hypocreaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/7-Amanita.jpg');">
+    <p class="caption"><em>Amanita</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/8-Heterobasidiomycetes.jpg');">
+    <p class="caption"><em>Heterobasidiomycetes</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9-Physalacriaceae.jpg');">
+    <p class="caption"><em>Physalacriaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9a-Physalacriaceae.jpg');">
+    <p class="caption"><em>Physalacriaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9b-Physalacriaceae.jpg');">
+    <p class="caption"><em>Physalacriaceae</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/10-Trichaptum.jpg');">
+    <p class="caption"><em>Trichaptum</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/10a-Trichaptum.jpg');">
+    <p class="caption"><em>Trichaptum</em></p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/11-American-Elm.jpg');">
+    <p class="caption">American Elm</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/12-American-Hophornbeam.jpg');">
+    <p class="caption">American Hophornbeam</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/13-American-Linden.jpg');">
+    <p class="caption">American Linden</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/14-Black-Locust.jpg');">
+    <p class="caption">Black Locust</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/15-Black-Walnut.jpg');">
+    <p class="caption">Black Walnut</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/16-blue-wood-aster.jpg');">
+    <p class="caption">Blue Wood Aster</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/17-box-elder.jpg');">
+    <p class="caption">Box Elder</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/18-burning-bush.jpg');">
+    <p class="caption">Burning Bush</p>
+  </div>
+  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/19-common-blue-violet.jpg');">
+    <p class="caption">Common Blue Violet</p>
+  </div>
+</div>
+
+</body>
+</html>

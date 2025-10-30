@@ -1,2 +1,61 @@
 #This will be the home page of this website.
 <!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Title Goes Here</title>
+  <meta name="description" content="Description Goes Here">
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- ========================= STYLE ========================= -->
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 1% 0;
+    font-family: Arial;
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+
+  header h1, header p { text-align: center; }
+  header p { width: 75%; margin: 0 auto; }
+
+  .col2 .grid-unit {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .col3 .grid-unit {
+    width: 31.3%;
+    margin: 1%;
+  }
+
+  .col4 .grid-unit {
+    width: 23%;
+    margin: 1%;
+  }
+
+  .grid-unit {
+    position: relative;
+    float: left;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+#changing cursor
+  .grid-unit:hover {
+    cursor: url('https://art240.christopher-lynn.org/tutorials/i/circle-pointer.png'), auto;
+  }

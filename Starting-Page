@@ -1,4 +1,5 @@
 <!-- This will be the home page of this website. -->
+<!-- Resource below --> 
 <!-- #https://www.w3schools.com -->  
 
 <!DOCTYPE html>
@@ -9,11 +10,71 @@
   <meta name="description" content="Description Goes Here">
   <meta charset="utf-8">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+<!-- Beth's Selected Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+
+ <!-- =================================== Top Menu ========================================= -->
+
+  <style type="text/css">
+    * {
+    	box-sizing: border-box;
+    }
+    
+    body {
+    	margin: 0;
+        padding: 0;
+    }
+    
+    nav { margin: 1rem 0; }
+    
+    nav ul { 
+    	display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li { 
+    	margin: 1rem 2%;
+    }
+    
+    nav ul li a { 
+    	margin: 0 0.1rem 0 0;
+    	padding: 1rem;
+        font: 800 1.25rem preconnect;
+   		color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: tan;
+    }
+    
+    nav ul li a:hover {
+    	background-color: red;
+
+    }
+    
+  </style>
+
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li id="logo">
+      <a href="/" title="home">Logo</a>
+    </li>
+    <li><a href="">Item 1</a></li>
+    <li><a href="">Item 2</a></li>
+    <li><a href="">Item 3</a></li>
+    <li><a href="">Item 4</a></li>
+  </ul>
+</nav>
 
   <!-- ========================= STYLE ========================= -->
+  
   <style>
   * {
     box-sizing: border-box;
@@ -25,10 +86,18 @@
     font-family: Arial;
   }
 
+
+/* increase size of h1 and p (directly below) */
+
   h1 {
-    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Jim Nightshade';
     text-transform: uppercase;
   }
+
+  p {
+  font-family: 'Jim Nightshade';
+    text-transform: uppercase;
+    }
 
   header h1, header p { text-align: center; }
   header p { width: 75%; margin: 0 auto; }
@@ -60,8 +129,12 @@
   .grid-unit:hover {
     cursor: url('https://art240.christopher-lynn.org/tutorials/i/circle-pointer.png'), auto;
   }
+  
+/* replace cursor above with https://drive.google.com/file/d/1BoTgBP_ZdSEA9oITKiGXI3-fMXJSRg1J/view?usp=drive_link */
 
-/* This caption format is for a semi-transparent white background located at the bottom of the image. If you would rather see the other option, then delete this one, and uncommment the other. */
+/* This caption format is for a semi-transparent white background located at the bottom of the image. */
+
+/* Might actually delete caption information below due to plans for using a image map */
 
   .caption {
     opacity: 0;
@@ -80,29 +153,6 @@
     transition: opacity 0.5s ease-in-out;
   }
 
-/* This caption is for a semi-transparent red background coving the full image, with the caption located in the center of the box. If you want this option, then delete the previous, and uncomment this section.
-
-  .caption {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: .5rem .5rem 1rem .5rem;
-    font-family: 'Josefin Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.85rem;
-    line-height: 30vh;
-    text-align: center;
-    color: #fff;
-    background: rgba(255,0,0,0.8);
-    transition: opacity 0.5s ease-in-out;
-  }
-
-*/
-
   .grid-unit:hover .caption {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -120,89 +170,33 @@
     }
   }
   </style>
-</head>
 
 
 <!-- ========================= BODY ========================= -->
+
 <body>
 
 <header>
-  <h1>Image Grid</h1>
-  <p>Images float left in rows. Images are in the background of the divs, which allows all the images to appear with the same dimensions, but they  get automatically cropped.</p>
+  <h1>Placeholder text</h1>
+  <p>more placeholder text</p>
+<!--Images float left in rows. Images are in the background of the divs, which allows all the images to appear with the same dimensions, but they  get automatically cropped.-->
+
 </header>
+
+<!-- DELETE IMAGES: Will be replaced with image mapping with the changing mouse icon-->
 
 <div class="col4">
   <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1-Hydnangiaceae.jpg');">
-    <p class="caption"><em>Hydnangiaceae</em></p>
+    <p class="caption"><em>You can change the text here</em></p>
   </div>
   <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1a-Hydnangiaceae.jpg');">
-    <p class="caption"><em>Hydnangiaceae</em></p>
+    <p class="caption"><em>and here!</em></p>
   </div>
   <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1b-Hydnangiaceae.jpg');">
     <p class="caption"><em>Hydnangiaceae</em></p>
   </div>
   <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/2-Mycenceae.jpg');">
     <p class="caption"><em>Mycenceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/3.-trichaptum.jpg');">
-    <p class="caption"><em>Trichaptum</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/4-icmadophilaceae.jpg');">
-    <p class="caption"><em>Icmadophilaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/5-Russulaceae.jpg');">
-    <p class="caption"><em>Russulaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/6-Hypocreaceae.jpg');">
-    <p class="caption"><em>Hypocreaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/7-Amanita.jpg');">
-    <p class="caption"><em>Amanita</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/8-Heterobasidiomycetes.jpg');">
-    <p class="caption"><em>Heterobasidiomycetes</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9-Physalacriaceae.jpg');">
-    <p class="caption"><em>Physalacriaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9a-Physalacriaceae.jpg');">
-    <p class="caption"><em>Physalacriaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/9b-Physalacriaceae.jpg');">
-    <p class="caption"><em>Physalacriaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/10-Trichaptum.jpg');">
-    <p class="caption"><em>Trichaptum</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/10a-Trichaptum.jpg');">
-    <p class="caption"><em>Trichaptum</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/11-American-Elm.jpg');">
-    <p class="caption">American Elm</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/12-American-Hophornbeam.jpg');">
-    <p class="caption">American Hophornbeam</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/13-American-Linden.jpg');">
-    <p class="caption">American Linden</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/14-Black-Locust.jpg');">
-    <p class="caption">Black Locust</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/15-Black-Walnut.jpg');">
-    <p class="caption">Black Walnut</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/16-blue-wood-aster.jpg');">
-    <p class="caption">Blue Wood Aster</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/17-box-elder.jpg');">
-    <p class="caption">Box Elder</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/18-burning-bush.jpg');">
-    <p class="caption">Burning Bush</p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/19-common-blue-violet.jpg');">
-    <p class="caption">Common Blue Violet</p>
   </div>
 </div>
 

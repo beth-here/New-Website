@@ -64,12 +64,12 @@
 <nav>
   <ul>
     <li id="logo">
-      <a href="/" title="home">Logo</a>
+      <a href="/" title="home">Home</a>
     </li>
-    <li><a href="">Item 1</a></li>
-    <li><a href="">Item 2</a></li>
-    <li><a href="">Item 3</a></li>
-    <li><a href="">Item 4</a></li>
+    <li><a href="">Adv 1</a></li>
+    <li><a href="">Adv 2</a></li>
+    <li><a href="">Adv 3</a></li>
+    <li><a href="">About</a></li>
   </ul>
 </nav>
 
@@ -188,15 +188,6 @@
 <div class="col4">
   <div class="grid-unit" style="background-image: url('https://media.istockphoto.com/id/1404061154/vector/old-vintage-map-of-a-peninsula-with-handmade-drawings-for-treasure-games-and-fantasy-stories.jpg?s=612x612&w=0&k=20&c=wS---dQM5Chhr00LCRfm74ilk-rUXZokrCa3wIscnwU=');">
     <p class="caption"><em>You can change the text here</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1a-Hydnangiaceae.jpg');">
-    <p class="caption"><em>and here!</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/1b-Hydnangiaceae.jpg');">
-    <p class="caption"><em>Hydnangiaceae</em></p>
-  </div>
-  <div class="grid-unit" style="background-image: url('https://christopher-lynn.org/riverworks2021/look-again/i/2-Mycenceae.jpg');">
-    <p class="caption"><em>Mycenceae</em></p>
   </div>
 </div>
 

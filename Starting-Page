@@ -21,11 +21,13 @@
   <style type="text/css">
     * {
     	box-sizing: border-box;
+        margin: 3vh, auto; 
     }
     
     body {
     	margin: 0;
         padding: 0;
+        
     }
     
     nav { margin: 1rem 0; }
@@ -42,7 +44,7 @@
     }
     
     nav ul li a { 
-    	margin: 0 0.1rem 0 0;
+    	margin: 0, auto;
     	padding: 1rem;
         font: 800 1.25rem preconnect;
    		color: #fff;
@@ -60,9 +62,10 @@
 
 </head>
 
-<body>
+
+<body> 
 <nav>
-  <ul>
+    <ul>
     <li id="logo">
       <a href="/" title="home">Home</a>
     </li>
@@ -159,14 +162,15 @@
   }
 
   /* Responsive layout - makes a one column-layout instead of multi-columns */
-  @media screen and (max-width: 782px) {
+  @media screen and (max-width: 125em) {
     .col2 .grid-unit,
     .col3 .grid-unit,
     .col4 .grid-unit {
-      width: 96%;
+      width: 100vh;
       float: none;
-      height: 30vh;
-      margin: 3vh 2%;
+      height: 90vh;
+      margin: 3vh auto;
+      
     }
   }
   </style>
@@ -188,6 +192,7 @@
 <div class="col4">
   <div class="grid-unit" style="background-image: url('https://media.istockphoto.com/id/1404061154/vector/old-vintage-map-of-a-peninsula-with-handmade-drawings-for-treasure-games-and-fantasy-stories.jpg?s=612x612&w=0&k=20&c=wS---dQM5Chhr00LCRfm74ilk-rUXZokrCa3wIscnwU=');">
     <p class="caption"><em>You can change the text here</em></p>
+
   </div>
 </div>
 

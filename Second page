@@ -96,27 +96,54 @@
     padding: 1% 0;
     font-family: Arial;
   }
+  
+  body {
+  background-image: url('https://plus.unsplash.com/premium_photo-1675782999366-2c3fcfe946c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29vZCUyMHRleHR1cmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white; 
+  }
 
-
-/* increase size of h1 and p (directly below) */
 
   h1 {
     font-family: 'Jim Nightshade';
     text-transform: uppercase;
+    
   }
-  
-   p {
-    font-family: 'Jim Nightshade';
-    text-transform: uppercase;
-  }
-
-  h3 {
+   
+   h3 {
   font-family: 'Jim Nightshade';
     text-transform: uppercase;
     }
 
+   p {
+    font-family: 'Jim Nightshade';
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+
   header h1, header h3 { text-align: center; }
   header h3 { width: 75%; margin: 0 auto; }
+  
+  header {
+  text-align: center;
+  padding: 1rem 1rem;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+header h1, 
+header h3 {
+  display: inline-block;                 
+  background-color: rgba(0, 0, 0, 0.6); 
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
 
   .grid-unit {
     position: relative;
@@ -129,8 +156,20 @@
 
   .grid-unit:hover {
     cursor: url('https://art240.christopher-lynn.org/tutorials/i/circle-pointer.png'), auto;
-
     }
+    
+    .inline-input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.2em 0.5em;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+
   }
   </style>
 
@@ -142,13 +181,11 @@
 <header>
   <h1>Your First Adventure!</h1>
   <h3>North quadrant</h3>
-  <p> words please work</p>
-  
-  <p>more placeholder text</p>
-<!-- Textbox -->
-<div>
-  <textarea placeholder="Noun"></textarea>
-</div>
+ <p>
+  Our story begins at the 
+  <input type="text" placeholder="Location" class="inline-input">
+  where the unexpected happens... I'm now going to keep typing words until I don't feel like it anymore <input type="text" placeholder="Location" class="inline-input"> Even more words.
+</p>
 
   </div>
 </div>

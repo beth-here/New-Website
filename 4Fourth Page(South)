@@ -180,7 +180,7 @@ header h3 {
 
 <header>
   <h1>The final trial!</h1>
-  <h3>South quadrant</h3>
+  <h3>The Southern Quadrant</h3>
  <p>
  ____ 
   <input type="text" placeholder="Location" class="inline-input">

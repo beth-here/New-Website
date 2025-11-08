@@ -180,7 +180,7 @@ header h3 {
 
 <header>
   <h1>Your First Adventure!</h1>
-  <h3>North quadrant</h3>
+  <h3>The Northern Kingdom</h3>
  <p>
   Our story begins at the 
   <input type="text" placeholder="Location" class="inline-input">

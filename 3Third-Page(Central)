@@ -76,11 +76,11 @@
 <body> 
 <nav>
     <ul>
-    <li><a href="here is where you put a link">Home</a></li>
-    <li><a href="here is where you put a link">Adv 1</a></li>
-    <li><a href="here is where you put a link" class= "active"> Adv 2</a></li>
-    <li><a href="here is where you put a link">Adv 3</a></li>
-    <li><a href="here is where you put a link">About</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/">Home</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv1">Adv 1</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv2"class="active">Adv 2</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv3">Adv 3</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/about">About</a></li>
   </ul>
 </nav>
 

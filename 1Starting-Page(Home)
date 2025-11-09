@@ -80,11 +80,11 @@
 <body> 
 <nav>
     <ul>
-    <li><a href="here is where you put a link" class="active">Home</a></li>
-    <li><a href="here is where you put a link">Adv 1</a></li>
-    <li><a href="here is where you put a link">Adv 2</a></li>
-    <li><a href="here is where you put a link">Adv 3</a></li>
-    <li><a href="here is where you put a link">About</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/" class="active">Home</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv1">Adv 1</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv2">Adv 2</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv3">Adv 3</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/about">About</a></li>
   </ul>
 </nav>
 
@@ -194,6 +194,16 @@
       margin: 3vh auto;
       
     }
+    .grid-unit {
+  height: auto !important;
+}
+
+.grid-unit img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
   }
   </style>
 
@@ -212,11 +222,30 @@
 <!-- DELETE IMAGES: Will be replaced with image mapping with the changing mouse icon-->
 
 <div class="col4">
-  <div class="grid-unit" style="background-image: url('https://media.istockphoto.com/id/1404061154/vector/old-vintage-map-of-a-peninsula-with-handmade-drawings-for-treasure-games-and-fantasy-stories.jpg?s=612x612&w=0&k=20&c=wS---dQM5Chhr00LCRfm74ilk-rUXZokrCa3wIscnwU=');">
-    <p class="caption"><em>Click a spot on the map to begin your journey!</em></p>
+  <div class="grid-unit" style="background: none; display: flex; justify-content: center; align-items: center;">
+    <!-- Image Map -->
+    <img src="https://media.istockphoto.com/id/1404061154/vector/old-vintage-map-of-a-peninsula-with-handmade-drawings-for-treasure-games-and-fantasy-stories.jpg?s=612x612&w=0&k=20&c=wS---dQM5Chhr00LCRfm74ilk-rUXZokrCa3wIscnwU=" usemap="#image-map" alt="Interactive Adventure Map" style="max-width: 100%; height: auto; border: 2px solid #5C3C00; border-radius: 8px;">
 
+
+    <map name="image-map">
+    <area target="" alt="Adv2" title="Adv2" href="https://i-exist-for-this-one-reason.tumblr.com/adv2" coords="304,285,279,309,182,320,131,264,271,192,254,127,299,129,322,156,357,164,365,190,393,165,433,179,441,234,397,230,342,288,307,299" shape="poly">
+    <area target="" alt="Adv3" title="Adv3" href="https://i-exist-for-this-one-reason.tumblr.com/adv3" coords="282,311,205,319,224,348,390,420,534,378,542,314,423,275,358,275,344,290,306,302,301,292" shape="poly">
+    <area target="" alt="Adv1" title="Adv1" href="https://i-exist-for-this-one-reason.tumblr.com/adv1" coords="182,1,175,49,257,45,225,87,250,126,303,127,323,154,360,163,415,123,447,-1" shape="poly">
+</map>
+
+    <p class="caption"><em>Click a spot on the map to begin your journey!</em></p>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    if (typeof imageMapResize === 'function') {
+      imageMapResize();
+    }
+  });
+</script>
+
 
 </body>
 </html>

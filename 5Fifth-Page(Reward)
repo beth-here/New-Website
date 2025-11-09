@@ -10,7 +10,6 @@
   <meta charset="utf-8">
 
 
-<!-- Beth's Selected Font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
@@ -75,15 +74,14 @@
 
 </head>
 
-
 <body> 
 <nav>
     <ul>
-    <li><a href="here is where you put a link">Home</a></li>
-    <li><a href="here is where you put a link">Adv 1</a></li>
-    <li><a href="here is where you put a link">Adv 2</a></li>
-    <li><a href="here is where you put a link">Adv 3</a></li>
-    <li><a href="here is where you put a link" class="active">About</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/">Home</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv1">Adv 1</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv2">Adv 2</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/adv3">Adv 3</a></li>
+    <li><a href="https://i-exist-for-this-one-reason.tumblr.com/about"class="active">About</a></li>
   </ul>
 </nav>
 
@@ -100,6 +98,8 @@
     font-family: Arial;
   }
   
+  /* THIS IS THE BACKGROUND WOOD TEXTURE IMAGE, stop thinking any other image! */
+  
   body {
   background-image: url('https://plus.unsplash.com/premium_photo-1675782999366-2c3fcfe946c4?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29vZCUyMHRleHR1cmV8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000'); 
   background-size: cover;          /* makes it fill the screen */
@@ -108,9 +108,7 @@
   background-position: center;     /* centers the image */
   color: white;                    /* optional - better text contrast */
 }
-
-
-
+ 
 /* increase size of h1 and p (directly below) */
 
   h1 {
@@ -126,21 +124,7 @@
   header h1, header p { text-align: center; }
   header p { width: 75%; margin: 0 auto; }
 
-  .col2 .grid-unit {
-    width: 48%;
-    margin: 1%;
-  }
-
-  .col3 .grid-unit {
-    width: 31.3%;
-    margin: 1%;
-  }
-
-  .col4 .grid-unit {
-    width: 23%;
-    margin: 1%;
-  }
-
+ 
   .grid-unit {
     position: relative;
     float: left;
@@ -158,6 +142,29 @@
 
 /* This caption format is for a semi-transparent white background located at the bottom of the image. */
 
+.video-unit {
+  position: relative;
+  padding-bottom: 100%; 
+  height: auto;
+  overflow: hidden;
+}
+
+.grid-unit.video-unit {
+    height: auto !important;
+    padding-bottom: 30% !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-unit iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #5C3C00;
+  border-radius: 8px;
+}
 /* Might actually delete caption information below due to plans for using a image map */
 
   .caption {
@@ -203,17 +210,23 @@
 
 <header>
   <h1>Reward</h1>
-  <p>___________________________________________________________________</p>
+  <p>____________________________________YAY___________________________________</p>
 <!--Images float left in rows. Images are in the background of the divs, which allows all the images to appear with the same dimensions, but they  get automatically cropped.-->
 
 </header>
 
 <!-- DELETE IMAGES: Will be replaced with image mapping with the changing mouse icon-->
 
-<div class="col4">
-  <div class="grid-unit" style="background-image: url('https://media.istockphoto.com/id/1404061154/vector/old-vintage-map-of-a-peninsula-with-handmade-drawings-for-treasure-games-and-fantasy-stories.jpg?s=612x612&w=0&k=20&c=wS---dQM5Chhr00LCRfm74ilk-rUXZokrCa3wIscnwU=');">
-    <p class="caption"><em>Click a spot on the map to begin your journey!</em></p>
 
+<div class="col4">
+  <div class="grid-unit video-unit">
+    <iframe 
+      src="https://www.youtube.com/embed/quI0bJkzXtA?autoplay=1&mute=1&loop=1&playlist=quI0bJkzXtA&controls=0&modestbranding=1&rel=0"
+      title="Adventure Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
   </div>
 </div>
 

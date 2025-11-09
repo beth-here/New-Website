@@ -20,9 +20,14 @@
     	box-sizing: border-box;
         margin: 0;
         padding: 0;
-
     }
-    
+
+          .tmblr-iframe-compact .tmblr-iframe--unified-controls {
+        display:none !important;
+    }
+
+/*<!--(essentially the above code removes the tumblr menu.)-->*/
+
     body {
     	margin: 0;
         font-family: 'Jim Nightshade'
